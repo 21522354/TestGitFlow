@@ -4,11 +4,29 @@
         DOM exercise
     </head>
     <body>
-        <button>
-            
+        <p>
+            Youtube Subcribe Button
+        </p>
+        <button class="js-button" onclick="
+            const inner = document.querySelector('.js-button');
+            if(inner.innerHTML === 'Subcribe'){
+                inner.innerHTML = 'Subcribed'
+            }
+            else{
+                inner.innerHTML = 'Subcribe'
+            }
+        ">
+            Subcribe
         </button>
-        <script>
 
+
+        <script>
+            function xuat(){
+                console.log('xin chao cac ban');
+            };
+            xuat();
+            const btnElement = document.body.querySelector('.js-button');
+            btnElement.setAttribute('title', 'Hello')
         </script>
     </body>
 </html>
