@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        DOM exercise
+        <title>
+            DOM display
+        </title>
     </head>
     <body>
-        <p>
-            Youtube Subcribe Button
-        </p>
-        <button class="js-button" onclick="
-            const inner = document.querySelector('.js-button');
-            if(inner.innerHTML === 'Subcribe'){
-                inner.innerHTML = 'Subcribed'
-            }
-            else{
-                inner.innerHTML = 'Subcribe'
-            }
-        ">
-            Subcribe
-        </button>
-
-
+        <div style="background-color: blueviolet; padding: 10px; width: 100%; margin-top: 20px;">
+            <span style="color: white; background-color: blue; border-radius: 20px;">
+                this is div tag
+            </span>
+            <span style="color: white; background-color: blue; border-radius: 20px">
+                this is div tag
+            </span>
+        </div>
+        <div style="background-color: aqua;">
+            <form>
+                <input id="myTextBox" type="number" width="100px">
+                <input id="inputButton" type="button" value="this is button" onclick="myFunction()">
+            </form>
+        </div>
+        <input id="textBox1" type="text">
         <script>
-            function xuat(){
-                console.log('xin chao cac ban');
-            };
-            xuat();
-            const btnElement = document.body.querySelector('.js-button');
-            btnElement.setAttribute('title', 'Hello')
+            function myFunction(){
+                let myTextBox1 = document.getElementById("myTextBox");
+                let text = myTextBox1.value;
+                alert(text);
+            }
         </script>
     </body>
 </html>
